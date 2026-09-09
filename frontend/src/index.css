@@ -1,0 +1,30 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/space-grotesk/500.css';
+@import '@fontsource/space-grotesk/600.css';
+@import '@fontsource/space-grotesk/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-surface-sunken text-ink-900 font-sans antialiased;
+  }
+
+  /* Tabular figures everywhere a number appears, so amounts and balances align cleanly. */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  *:focus-visible {
+    outline: 2px solid theme('colors.ledger.DEFAULT');
+    outline-offset: 2px;
+  }
+}

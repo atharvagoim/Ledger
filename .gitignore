@@ -1,0 +1,38 @@
+# === Backend (Maven / Java) ===
+backend/target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+hs_err_pid*.log
+replay_pid*.log
+
+# === Frontend (Node / Vite) ===
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+frontend/npm-debug.log*
+
+# === Environment / secrets ===
+.env
+.env.local
+.env.*.local
+!frontend/.env.example
+
+# === IDE / editor ===
+.idea/
+.vscode/
+*.iml
+*.swp
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Logs / temp ===
+logs/
+*.log
+*.tmp
+
+# === Auto-generated tooling artifacts (not part of the project source) ===
+.github/modernize/
